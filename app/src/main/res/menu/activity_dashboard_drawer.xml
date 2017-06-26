@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_local_backups"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Backups Locales" />
+
+        <item
+            android:id="@+id/nav_online_backups"
+            android:icon="@drawable/ic_backup_black_24dp"
+            android:title="Backups Online  (premium)" />
+
+
+        <item
+            android:id="@+id/nav_premium"
+            android:icon="@drawable/ic_unlock_icon"
+            android:title="Comprar versión pro" />
+
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir App" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_logout"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>

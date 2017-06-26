@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "653443366892",
+    "project_id": "sr-profesor"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653443366892:android:4cecb3443679ea68",
+        "android_client_info": {
+          "package_name": "com.darwindeveloper.mrteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653443366892-r8u70do2obk9mogoke6k4dlv2nasnkfg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "653443366892-ckl0dka9ltmiofuskblfqah3d7rhoq57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.darwindeveloper.mrteacher",
+            "certificate_hash": "9e4a733ac445ec2ea157b23a2ef31f06cee07fbc"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg0DBNpieJ0Ubpqash5Xs4qD6uT5ToTSo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

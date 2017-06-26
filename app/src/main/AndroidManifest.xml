@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darwindeveloper.mrteacher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name=".utils.AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".utils.AlarmReceiver" />
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden">
+
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CarreraActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".EstudiantesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_estudiantes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LocalBackupsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_local_backups"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginfActivity"
+            android:label="@string/title_activity_loginf" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".EventoActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
